@@ -1,7 +1,7 @@
 {
   "name": "minimocker",
-  "version": "1.0.4",
-  "description": "A convience tool to mock data in your local development.",
+  "version": "1.0.0",
+  "description": "A mini mocker your local development.",
   "author": "yorick304 <892390913@qq.com>",
   "scripts": {
     "start": "node server.js"
