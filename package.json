@@ -1,0 +1,38 @@
+{
+  "name": "minimocker",
+  "version": "1.0.4",
+  "description": "A convience tool to mock data in your local development.",
+  "author": "yorick304 <892390913@qq.com>",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "bin": {
+    "minimocker": "server.js",
+    "tm": "server.js",
+    "mock": "server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yorick304/minimocker.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "commander": "^2.9.0",
+    "express": "^4.14.0",
+    "jsonfile": "^2.3.1",
+    "morgan": "^1.7.0",
+    "open": "0.0.5",
+    "request": "^2.74.0",
+    "tinyproxy": "^0.1.9"
+  },
+  "bugs": {
+    "url": "https://github.com/yorick304/minimocker/issues"
+  },
+  "homepage": "https://github.com/yorick304/minimocker#readme",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [
+    "mock"
+  ],
+  "license": "MIT"
+}

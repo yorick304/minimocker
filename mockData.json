@@ -1,0 +1,13 @@
+[
+    {
+        "urlReg": "wd/testAPI",
+        "enabled": true,
+        "jsonp": true,
+        "statusCode": "200",
+        "jsonpReg": "",
+        "headers": {
+            "Content-Type": "text/html"
+        },
+        "body": "{\n    \"result\": {\n        \"data\": \"testMockData\"\n    }\n}"
+    }
+]
