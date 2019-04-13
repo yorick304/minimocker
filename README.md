@@ -1,11 +1,11 @@
-# tinymocker
+# minimocker
 
-> A convience tool to mock data in your local development
+> A mini mocker your local development
 
 ## quick start
 
 ```javascript
-sudo npm i -g tinymocker
+sudo npm i -g minimocker
 mock
 ```
 
