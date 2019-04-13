@@ -15,7 +15,7 @@ export default {
       // with hot-reload because the reloaded component
       // preserves its current state and we are modifying
       // its initial state.
-      title: 'Tinymocker',
+      title: 'Minimocker',
       subtitle: '为本地开发提供mock数据'
     }
   }

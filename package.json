@@ -23,7 +23,8 @@
     "morgan": "^1.7.0",
     "open": "0.0.5",
     "request": "^2.74.0",
-    "tinyproxy": "^0.1.9"
+    "tinyproxy": "^0.1.9",
+    "webpack": "^4.30.0"
   },
   "bugs": {
     "url": "https://github.com/yorick304/minimocker/issues"
