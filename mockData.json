@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "urlReg": "tes",
+        "enabled": true,
+        "jsonp": false,
+        "statusCode": "200",
+        "jsonpReg": "",
+        "headers": {
+            "Content-Type": "text/html"
+        },
+        "body": "{\n\"ad\": 123\n}"
+    }
+]
