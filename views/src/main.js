@@ -26,6 +26,7 @@ Vue.filter('formatMockList', (Arr) => {
 
 /* eslint-disable no-new */
 new Vue({
-    el: 'body',
+    el: '#app',
+    template: '<App/>',
     components: { App }
-});
+})

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <title></title>
+    <Title></Title>
     <div class="container">
       <div class="ctrl">
         <button type="button" class="btn btn-default" @click="newMockModal=true">
@@ -30,7 +30,7 @@
           </div>
         </modal>
       </div>
-      <panel v-for="mock in mockData | formatMockList" :header="mock.urlReg" :status="mock.enabled">
+      <panel v-for="mock in formatMockList" :header="mock && mock.urlReg" :status="mock && mock.enabled">
         <div class="row">
           <div class="group">
             <span class="mock-label">匹配URL：</span><div class="mock-content">{{ mock.urlReg }}</div>
@@ -131,8 +131,8 @@ import { modal, alert } from 'vue-strap';
 
 export default {
   components: {
-    title,
-    panel,
+    Title: title,
+    Panel: panel,
     modal,
     alert
   },
@@ -180,7 +180,18 @@ export default {
       alertInfo: ''
     }
   },
-  ready() {
+  computed: {
+    formatMockList() {
+      const Arr = this.mockData
+      let enabledArr = [];
+      let disabledArr = [];
+      Arr.forEach((e) => {
+          e.enabled?enabledArr.push(e):disabledArr.push(e);
+      });
+      return enabledArr.concat(disabledArr);
+    }
+  },
+  created() {
     this.$http.get('/mockData').then((response) => {
       this.mockData = response.json();
       console.log(response.json());

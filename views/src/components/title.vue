@@ -9,12 +9,9 @@
 
 <script>
 export default {
+  name: 'TitlePanel',
   data () {
     return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
       title: 'Minimocker',
       subtitle: '为本地开发提供mock数据'
     }
